@@ -1,0 +1,107 @@
+*,*::before,*::after  /* universal selector + universally apply before start of each element + universally apply after start of each element*/
+{
+padding:0;
+margin:0;
+box-sizing: border-box;
+}
+
+#wrapper
+{
+    height:100vh;
+    width:100vw;
+    position:relative;
+    background-image: linear-gradient(to top right,rgb(236, 194, 236),white,rgb(148, 148, 209));
+    display:grid;
+    place-items: center;
+}
+
+h2
+{
+    position: relative;
+    right:580px;
+    bottom:350px;
+    font-family: 'Barriecito';
+    font-size:3rem;
+}
+
+.game-info
+{
+    color:#4655b7;
+    position:absolute;
+    top:3rem;
+    background-color: rgba(105, 102, 102, 0.15);
+    border:1px solid rgba(255,255,255,0.25);
+    border-radius:1rem;
+    padding:0.5rem 3rem;
+    text-align:center;
+    font-size:2rem;
+}
+
+.tic-tac-toe
+{
+    width:90%;
+    max-width:20rem;
+    position: absolute;
+    background-color: rgba(80, 78, 78, 0.15);
+    border:1px solid rgba(255,255,255,0.25);
+    border-radius:1rem;
+    padding:2rem;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    aspect-ratio: 1/1; /* to maintain the ratio of width-height*/
+}
+
+.box
+{
+    position: relative;
+    width:100%;
+    aspect-ratio: 1/1;
+    cursor:pointer;
+    font-size:3rem; 
+    color:#5261c1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box1,.box2,.box4,.box5
+{
+border-right: 2px solid rgb(28, 27, 27) ;
+border-bottom: 2px solid rgb(28, 27, 27) ;
+}
+
+.box3,.box6
+{
+    border-bottom: 2px solid rgba(28,27,27);
+}
+
+.box7,.box8
+{
+    border-right: 2px solid rgba(28,27,27); 
+}
+
+.button
+{
+    color:#5261c1;
+    position: absolute;
+    bottom:5rem;
+    font-size: 1rem;
+    background-color: rgba(105, 102, 102, 0.15);
+    border:1px solid rgba(255,255,255,0.25);
+    border-radius:1rem;
+    padding:0.5rem 3rem;
+    text-align:center;
+    cursor:pointer;
+    display: none;
+}
+
+.button.active
+{
+    display: flex;
+}
+
+.win
+{
+    background-color: rgb(76, 227, 76);
+}
