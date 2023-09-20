@@ -6,6 +6,7 @@ It's simple to use and it is played between two players with figures 'X' and 'O'
 It provides relaxing and soothing effect after playing. 
 
 It's a non-responsive web page, so appearance may change on different screens. 
+Responsive version will be released soon......
 
 
 Just use the link below and enjoy your game. 🤩
